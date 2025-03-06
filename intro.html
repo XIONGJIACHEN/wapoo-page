@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction Page</title>
+    <style>
+        :root {
+            --title-font-size: 1.5rem;
+            --main-text-font-size: 4rem;
+            --sub-text-font-size: 1.5rem;
+            --button-font-size: 1.5rem;
+            --link-font-size: 1rem;
+        }
+
+        body {
+            margin: 0;
+            padding: 0; /* 去掉默认的 padding */
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .container {
+            background: linear-gradient(90deg, #820637 60%, #1077a0);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh; /* 高度适应浏览器的高度 */
+            color: #fff; /* 文字颜色为白色 */
+        }
+
+        .areaA {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 40px;
+        }
+
+        .logo {
+            height: 64px; /* 根据需要调整图片大小 */
+            width: 64px; /* 根据需要调整图片大小 */
+        }
+
+        .title {
+            margin-left: 20px;
+            font-size: var(--title-font-size);
+            color: #fff;
+        }
+
+        .areaC {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-grow: 1; /* 使区域C占据剩余空间 */
+        }
+
+        .mainText {
+            font-size: var(--main-text-font-size);
+            max-width: 800px; /* 最大宽度可以调整 */
+            margin-bottom: 50px;
+        }
+
+        .subText {
+            line-height: 1.6;
+            font-size: var(--sub-text-font-size);
+            max-width: 1000px; /* 最大宽度可以调整 */
+            margin-bottom: 50px;
+        }
+
+        .button {
+            background-color: #fff;
+            font-weight: bold; /* 使按钮中的文字加粗 */
+            color: #000;
+            margin-top: 40px;
+            border: none;
+            padding: 20px 40px;
+            border-radius: 10px;
+            font-size: var(--button-font-size);
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .button:hover {
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .areaB {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 40px;
+        }
+
+        .link {
+            font-size: var(--link-font-size);
+            color: #fff;
+            text-decoration: underline;
+            margin-left: 20px;
+            transition: color 0.3s ease; /* 添加过渡效果 */
+        }
+
+        .link:hover {
+            color: #000; /* 鼠标悬停时显示为黑色 */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="areaA">
+        <img src="wapoo.png" alt="Wapoo Logo" class="logo"/>
+        <span class="title">Wapoo</span>
+    </div>
+    <div class="areaC">
+        <h1 class="mainText">
+            Create Al fantasy video<br/>
+            in one click
+        </h1>
+        <p class="subText">
+            Wapoo is a revolutionary video effects tool that combines cutting-edge Al technology
+            with creative inspiration. We provide you with an unparalleled visual experience,
+            transforming ordinary videos into masterpieces with unique effects and filters.
+        </p>
+        <a href="https://apps.apple.com/app/6499128490" class="button">DOWNLOAD IN APP STORE</a>
+    </div>
+    <div class="areaB">
+        <a href="https://www.wapoo.ai/terms/terms_and_conditions.html" class="link">Term of Service</a>
+        <a href="https://www.wapoo.ai/terms/privacy_policy.html" class="link">Privacy Policy</a>
+    </div>
+</div>
+</body>
+</html>
